@@ -1,0 +1,13 @@
+<div ng-controller="userInfoCtrl">
+    <h3>用户信息</h3>
+    登录用户：{{user.login}}<br>
+    账户ID：{{user.id}}<br>
+    组织信息：{{user.company}}<br>
+    描述信息:{{user.bio}}<br>
+    公有仓库数量：{{user.public_repos}}<br>
+    账户创建时间：{{user.created_at|date:'yyyy-MM-dd'}}<br>
+    上次登录时间：{{user.updated_at|date:'yyyy-MM-dd'}}<br>
+    主页网址：{{user.html_url}}<br>
+    <button ng-click="viewRepos()">查看所有仓库</button>
+    <button ng-click="viewRepos()">查看Starred Repos</button>
+</div>
